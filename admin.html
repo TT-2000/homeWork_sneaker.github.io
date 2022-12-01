@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Admin</title>
+  
+</head>
+<body>
+    <div class="menu">
+        <a  href="./sanpham.html">Sản Phẩm</a>
+        <a class="cart-menu" href="./giohang.html">Giỏ Hàng<span class="badge"></span></a>
+        <a class="active" href="./admin.html">Admin</a>
+    </div>
+
+    <h1>Admin</h1>
+    
+    <div class="form">
+        <form action="">
+            <h2>THÊM SẢN PHẨM</h2>
+            <div class="form-group">
+                <label id="name">Tên sản phẩm</label>
+                <input name="title" type="text" id="name">
+                <span class= "message"></span>
+            </div>
+            <div class="form-group">
+                <label id="image">Hình ảnh</label>
+                <input  name="image" type="text" id="image">
+                <span class = "message"></span>
+            </div>
+            <div class="form-group">
+                <label id="price">Giá</label>
+                <input  name="price" type="text" id="price">
+                <span class = "message"></span>
+            </div>
+            <div class="form-group">
+                <label id="describe">Mô tả</label>
+                <textarea id = "describe" type="text" name="describe" id="" cols="30" rows="10"></textarea>
+                <span class = "message"></span>
+            </div>
+           <div class="button">
+                <button>ADD</button>
+                <div class="text"></div>
+           </div>
+        </form>
+    </div>
+
+    <div class="toast-message">
+        <ul class="message">
+        </ul>
+    </div>
+    
+    <script src="./javascript/admin.js"></script>
+</body>
+</html>
